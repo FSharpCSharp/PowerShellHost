@@ -22,7 +22,7 @@ namespace Application.Test
             var fileName = Path.Combine(baseDir, "Test.ps1");
             // CreateDefault2 is intentional.
             InitialSessionState iss = InitialSessionState.CreateDefault();
-            iss.ExecutionPolicy = ExecutionPolicy.Unrestricted;
+            iss.ExecutionPolicy = ExecutionPolicy.Bypass;
 
             // NOTE: instantiate custom host myHost for the next line to capture stdout and stderr output
             //       in addition to just the PSObjects
